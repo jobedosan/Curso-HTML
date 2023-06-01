@@ -196,5 +196,21 @@
     <p>
         Con HTML 5 la W3C se estableció que solo iba a haber un solo tipo de documento, y para especificar que es un tipo de documento con la nueva versión simplente hay que colocar &lt;!DOCTYPE html&gt;
     </p>
+
+    <h2>
+        Metaetiquetas
+    </h2>
+
+    <h3>
+        &lt;meta charset="UTF-8"&gt;
+    </h3>
+
+    <p>
+        Charset es el juego de caracteres en el cual está codificada una página (esto tiene que ver con los idiomas), UTF-8 es el juego de caracteres universal estándar, por ejemplo hay caracteres que no se utililzan en inglés y solo en español como la letra ñ. Sin la etiqueta &lt;meta charset="UTF-8"&gt; la letra Ñ y los acentos no se representarían de forma correcta, incluso algunas dieresis. Esta etiqueta permite que estos caracteres se muestren de forma correcta en el navegador. Por esta razón es muy importante agregar esta metaetiqueta &lt;meta charset="UTF-8"&gt;. Algunos navegadores ya reconocen estos caracteres pero su adición forma parte de las buenas prácticas. 
+    </p>
+
+    <p>
+        Los caracteres especiales se pueden codificar igualmente sin necesidad de la etiqueta &lt;meta charset="UTF-8"&gt;, de hecho lo estamos haciendo para poder agregar los picoparéntesis sin alterar el código, pero esto si es que se quiere hacer en algún navegador viejo, como tal no es una buena práctica y lleva mucho más trabajo. En el siguiente link podrás ver cómo escribir los caracteres especiales en HTML: <a href="../img/Caracteres especiales en HTML.pdf" target="_blank">Caracteres especiales en HTML</a>.
+    </p>
 </body>
 </html>
