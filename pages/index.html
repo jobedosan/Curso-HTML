@@ -59,11 +59,7 @@
     </p>
 
     <p>
-        Para iniciar una estructura HTML se puede tratar de aprender de memoria pero la realidad es que no es sencillo mantener todo en mente, una práctica común es consultar en internet cualquier información olvidada, ya que es mucha.
-
-        En VScode al escribir HTML:5 nos aparecerá automáticamente la estructura básica de un documento HTML. Es muy básica pero así ahorraremos tiempo, lo importante es saber la función de cada línea del código, si se olvida, podremos consultarlo siempre en internet.
-
-        Estos párrafos fueron creados con la etiqueta p de párrafo.
+        Para iniciar una estructura HTML se puede tratar de aprender de memoria pero la realidad es que no es sencillo mantener todo en mente, una práctica común es consultar en internet cualquier información olvidada, ya que es mucha. En VScode al escribir HTML:5 nos aparecerá automáticamente la estructura básica de un documento HTML. Es muy básica pero así ahorraremos tiempo, lo importante es saber la función de cada línea del código, si se olvida, podremos consultarlo siempre en internet. Estos párrafos fueron creados con la etiqueta p de párrafo.
     </p>
 
     <h2>
@@ -212,6 +208,30 @@
 
     <p>
         Los caracteres especiales se pueden codificar igualmente sin necesidad de la etiqueta &lt;meta charset="UTF-8"&gt;, de hecho lo estamos haciendo para poder agregar los picoparéntesis sin alterar el código, pero esto si es que se quiere hacer en algún navegador viejo, como tal no es una buena práctica y lleva mucho más trabajo. En el siguiente link podrás ver cómo escribir los caracteres especiales en HTML: <a href="../img/Caracteres especiales en HTML.pdf" target="_blank">Caracteres especiales en HTML</a>.
+    </p>
+
+    <h3>
+        &lt;meta http-equiv="X-UA-Compatible" content:"IE=edge"&gt;
+    </h3>
+
+    <p>
+        Esta etiqueta no es estándar e incluso de puede borrar, pero se utiliza para indicar al navegador Internet Explorer que trate de igualar la visualización del documento a la brindada por edge. Como ya no se utiliza IE se puede quitar, pero VScode lo agrega porque este es un programa desarrollado por Microsoft.
+    </p>
+
+    <h3>
+        &lt;meta name="viewport" content="width=device-width initial-scale=1.0"&gt;
+    </h3>
+
+    <p>
+        Esta metaetiqueta tiene dos atributos, name que tiene como valor el nombre de la etiqueta y content que es el contenido al que hace referencia. El viewport es la parte visible del navegador donde se dibuja o renderiza el contenido HTML. Esta etiqueta es muy importante porque le dice a los dispositivos cómo es que se va a adaptar el contenido del documento, para el responsive-web-design.
+    </p>
+
+    <p>
+        Esta metaetiqueta tiene varios atributos posibles, es recomendable ver toda la información en MDN, sin embargo, los más importantes son width=device-width, con eso indica que el ancho del documento HTML se adaptará al ancho del dispositivo. 
+    </p>
+
+    <p>
+        Seguidamente aparece el atributo initial-scale, el cual es utilizado para indicar la escala inicial a la cual se va a comenzar el contenido, el valor 1.0 indica 100%. Esto es muy importante esta etiqueta para el responsive-web-design, aunque escribamos todo el código CSS necesario para que la página se adapte de forma adecuada a distintos dispositivos, no funcionará todo ese código si la etiqueta &lt;meta name="viewport" content="width=device-width initial-scale=1.0"&gt; no está presente.
     </p>
 </body>
 </html>
