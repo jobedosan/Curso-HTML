@@ -9,564 +9,688 @@
     <link rel="icon" href="../img/html.png">
 </head>
 <body>
-    <h1>
-        Curso de HTML
-    </h1>
-
-    <p>
-        HTML es el lenguaje encargado de dar contenido y estructura a la web. Texto, imágenes, videos, etc.
-    </p>
-
-    <p>
-        CSS es el lenguaje que da colores, tamaños y diseño en general a las páginas web.
-    </p>
-
-    <p>
-        Los lenguajes de programación como Python y Javascript nos permiten agregar acciones a nuestras páginas web o programas, más interacción por parte del usuario. Un ejemplo de esto pueden ser los botones que nos permiten cambiar una página de estilo de día para estilo de noche o viceversa.
-    </p>
-
-    <p>
-        Los navegadores web ya entienden estas tecnologías, no necesitamos instalar nada. Se les conoce como estándares porque todos los navegadores web utilizan estas tecnologías.
-    </p>
-
-    <p>
-        Estos lenguajes estándares están regidos por grupos de personas que forman parte de grandes tecnologías, y son los que van delimitando cuáles son los avances que los navegadores tienen que ir aceptando en sus nuevas versiones para darnos más características a los programadores y desarrolladores web.
-    </p>
-
-    <p>
-        Las personas encargadas de la definición de los estándares de HTML son la W3C. Podemos entrar a su página desde el link: <a href="https://www.w3.org/">https://www.w3.org/</a>. La documentación de la W3C es muy amplia y tediosa de leer.
-    </p>
-    
-    <p>
-        Además de la W3C, con el tiempo salió otro grupo de personas que se dedica a definir los estándares, son la Whatwg, podemos ver su documentación en el siguiente link: <a href="https://whatwg.org/">https://whatwg.org/</a>. Sin embargo desde hace algunos años colaboran con la W3C. Es recomendable leer la W3C en lugar de la whatwg, es prácticamente la documentación oficial, es más amigable.
-    </p>
-
-    <p>
-       Otro sitio recomendable para aprender sobre HTML y su documentación es MDN en el siguiente link:  . Aunque no es la documentación oficial es muy utilizada por los programadores y es una documentación proporcionada por los creadores de Mozilla. Tienen documentación para HTML, CSS y Javascript.
-    </p>
-
-    <p>
-        Otra página recomendable para consultar las funciones de las etiquetas de HTML es HTML reference, podemos verla en el siguiente link: <a href="https://htmlreference.io/">https://htmlreference.io/</a>. Nos da algunos enlaces a documentaciones, ejemplos e incluso nos menciona los atributos que puede tener una etiqueta.
-    </p>
-
-    <hr>
-
-    <h2>
-        Creación de archivos HTML
-    </h2>
-
-    <p>
-        Los archivos HTML se crean al crear un nuevo archivo de texto y cambiando la extensión html.
-
-        Siempre es recomendable crear carpetas para cada proyecto.
-    </p>
-
-    <p>
-        Para iniciar una estructura HTML se puede tratar de aprender de memoria pero la realidad es que no es sencillo mantener todo en mente, una práctica común es consultar en internet cualquier información olvidada, ya que es mucha. En VScode al escribir HTML:5 nos aparecerá automáticamente la estructura básica de un documento HTML. Es muy básica pero así ahorraremos tiempo, lo importante es saber la función de cada línea del código, si se olvida, podremos consultarlo siempre en internet. Estos párrafos fueron creados con la etiqueta p de párrafo, da un formato al texto creando un salto de línea y da espaciado al texto arriba, abajo, a la izquierda y a la derecha en relación al resto de contenido.
-    </p>
-
-    <hr>
-
-    <h2>
-        Emmet
-    </h2>
-
-    <p>
-        Emmet es una herramienta que nos permite escribir código HTML y CSS de manera muy rápida. Podemos ver su funcionamiento en la documentación que está en su página web: <a href="https://docs.emmet.io/" target="_blank">https://emmet.io/</a>.
-    </p>
-
-    <hr>
-
-    <h2>
-        Atajos en VScode
-    </h2>
-
-    <p>
-        VScode tiene muchos atajos útiles, podemos verlos si buscamos en nuestro navegador "VScode cheat sheet" o en el siguiente link: <a href="../img/VScode cheat sheet para Windows.pdf" target="_blank">Hoja de atajos de Visual Studio Code</a>
-    </p>
-
-    <hr>
-
-    <h2>
-        ¿Qué es HTML?
-    </h2>
-
-    <p>
-        HTML (hypertext markup language) es un lenguaje de marcas basado en etiquetas.
-    </p>
-
-    <hr>
-
-    <h2>
-        Estructura básica de HTML
-    </h2>
-
-    <p>
-        Este documento ya posee una estructura básica de HTML, procederemos a comprender para qué funciona cada una de sus línea.
-    </p>
-
-    <p>
-        Las etiquetas HTML comienzan con el símbolo de menor qué (&lt;) y terminan con el símbolo de mayor que (&gt;), conocidos como picoparéntesis. Hay etiquetas que abren y cierran, tienen apertura (<etiqueta>) y cierre (&lt;/etiqueta&gt;), el cierre tiene un slash (/) luego del menor que. También hay etiquetas que tienen una etiqueta de apertura solamente y son mejor conocidas como selfclosing.
-    </p>
-
-    <p>
-        Las etiquetas HTML pueden tener atributos, más adelante se tratarán a profundidad en este curso, los atributos afectan las etiquetas de formas específicas y tienen su propia función.
-    </p>
-
-    <p>
-        Las etiquetas y atributos se escriben en minúsculas como buena práctica (excepto por la etiqueta DOCTYPE), aunque HTML no distingue mayúsculas y minúsculas.
-    </p>
-
-    <p>
-        La etiqueta principal de un documento es html, la cual está compuesta por dos etiquetas más, la etiqueta <b>head</b> y la etiqueta <b>body</b>. Todo lo que esté dentro de la etiqueta <b>head</b> es para enlazar otro tipo de archivo como las hojas de estilos, archivos Javascript, algunas imágenes que sirven a los sitios web para los íconos que se instalan en los navegadores o dispositivos móviles (el favicon que es el ícono que se muesta en las pestaña donde abrimos la página), títulos y descripciones que tienen que ver con el SEO de las páginas en los motores de búsqueda, etc.
-    </p>
-
-    <p>
-        Toda la información guardada por la etiqueta <b>head</b> es considerada meta-información, porque es información que habla de la página pero visualmente no es vista por el usuario, es información utilizada por los algoritmos dedicados a posicionar las páginas en los buscadores.
-    </p>
-
-    <p>
-        Todo lo que queramos que se vea en el cuerpo de la página debe escribirse en la etiqueta <b>body</b>, como lo dice su nombre, es el cuerpo de la página.
-    </p>
-
-    <p>
-        Es importante respetar la jerarquía de las etiquetas, no podemos por ejemplo abrir la etiqueta <b>body</b> dentro del <b>head</b> y cerrarla fuera del body. Son etiquetas que están al mismo nivel y van separadas, esto ocurre con todas las etiquetas. HTML al no ser un lenguaje de programación no nos mostrará errores, pero cuando tenemos algo mal cerrado podría no llegar a mostrarse correctamente.
-    </p>
-
-    <p>
-        Otro aspecto importante en HTML es la indentación, es el espaciado que creamos con la tecla tab y nos muestra claramente la jerarquía de las etiquetas, cómo están posicionadas unas dentro de otras.
-    </p>
-
-    <p>
-        En el siguiente ejemplo veremos una etiqueta sin indentación seguida de otra con indentación.
-    </p>
-
-    <p>
-        <pre>
-            <code>
-                &lt;h1&gt;
-                &lt;p&gt;
-                Este texto no tiene indentación, no se ve claramente cómo es la jerarquía.
-                &lt;/p&gt;
-                &lt;/h1&gt;
-            </code>
-        </pre>
-
-        <pre>
-            <code>
-                &lt;h1&gt;
-                    &lt;p&gt;
-                        Este texto si tiene indentación, se ve claramente cómo es la jerarquía.
-                    &lt;/p&gt;
-                &lt;/h1&gt;
-            </code>
-        </pre>
-    </p>
-
-    <hr>
-
-    <h2>
-        Comentarios en HTML
-    </h2>
-
-    <p>
-        Un comentario en HTML o en lenguajes de programación como Javascript son textos o notas que no queremos que el navegador interprete, nos sirven para dejar indicaciones para los programadores. En HTML los comentarios inician con menor que (<), signo de exclamación y dos guiones (-), y los cerramos con dos guiones(-) y un mayor que (>).
-    </p>
-    
-    <!--Esto es un comentario de HTML-->
-
-    <p>
-        Es posible convertir en comentario cualquier parte de un código por medio de atajos, en el caso de VScode debemos seleccionar el código o texto a convertir en comentario y presionar Ctrl+K seguido de Ctrl+C.
-    </p>
-
-    <hr>
-    
-    <h2>
-        Etiqueta HTML y el atributo lang 
-    </h2>
-
-    <p>
-        La etiqueta HTML es la que se encarga de contener la cabeza y cuerpo de nuestro documento (head y body). Desde HTML 5 es importante por cuestiones de posicionamiento de contenido, agregar el idioma en el cuál nosotros vamos a escribir el contenido de nuestro documento HTML.
-    </p>
-
-    <p>
-        El atributo lang tiene por defecto el valor en que significa inglés por english, aunque podemos ser específicos con el lenguaje hasta el punto de especificar la región pues hay ciertas expresiones que son propias de una región, no es lo mismo español de españa que español de mexico o de Venezuela, por ejemplo. Para japonés se usa jp, para español utilizamos es, esto lo podemos buscar en internet.
-    </p>
-
-    <p>
-        Si llegasemos a necesitar señalar que el español es de algún área en específico debemos usar el guion (-) seguido del dominio del país en mayúsculas, por ejemplo VE en el caso de Venezuela. Esto es solo en casos muy especiales donde el contexto del contenido es muy particular de algún país en específico.
-    </p>
-
-    <hr>
-
-    <h2>
-        Etiqueta DOCTYPE
-    </h2>
-    
-    <p>
-        Antes de HTML 5 existieron las versiones anteriores de HTML y una mezcla entre HTML y XML que es otro lenguaje de marcado, en cada una de estas versiones había diferentes tipos de documento, por lo cuál la etiqueta DOCTYPE resultaba ser muy larga y engorrosa, porque la etiqueta iba acompañada de una URL hacia la especificación del tipo de documento. Esto ya no se utiliza, pero antes dependiendo del tipo de documento que especificabamos para escribir, algunas etiquetas eran soportadas y otras no o el comportamiento y visualización de las mismas se modificaba.
-    </p>
-
-    <p>
-        Con HTML 5 la W3C se estableció que solo iba a haber un solo tipo de documento, y para especificar que es un tipo de documento con la nueva versión simplente hay que colocar &lt;!DOCTYPE html&gt;
-    </p>
-
-    <hr>
-
-    <h2>
-        Metaetiquetas básicas
-    </h2>
-
-    <h3>
-        &lt;meta charset="UTF-8"&gt;
-    </h3>
-
-    <p>
-        Charset es el juego de caracteres en el cual está codificada una página (esto tiene que ver con los idiomas), UTF-8 es el juego de caracteres universal estándar, por ejemplo hay caracteres que no se utililzan en inglés y solo en español como la letra ñ. Sin la etiqueta &lt;meta charset="UTF-8"&gt; la letra Ñ y los acentos no se representarían de forma correcta, incluso algunas dieresis. Esta etiqueta permite que estos caracteres se muestren de forma correcta en el navegador. Por esta razón es muy importante agregar esta metaetiqueta &lt;meta charset="UTF-8"&gt;. Algunos navegadores ya reconocen estos caracteres pero su adición forma parte de las buenas prácticas. 
-    </p>
-
-    <p>
-        Los caracteres especiales se pueden codificar igualmente sin necesidad de la etiqueta &lt;meta charset="UTF-8"&gt;, de hecho lo estamos haciendo para poder agregar los picoparéntesis sin alterar el código, pero esto si es que se quiere hacer en algún navegador viejo, como tal no es una buena práctica y lleva mucho más trabajo. En el siguiente link podrás ver cómo escribir los caracteres especiales en HTML: <a href="../img/Caracteres especiales en HTML.pdf" target="_blank">Caracteres especiales en HTML</a>.
-    </p>
-
-    <h3>
-        &lt;meta http-equiv="X-UA-Compatible" content:"IE=edge"&gt;
-    </h3>
-
-    <p>
-        Esta etiqueta no es estándar e incluso de puede borrar, pero se utiliza para indicar al navegador Internet Explorer que trate de igualar la visualización del documento a la brindada por edge. Como ya no se utiliza IE se puede quitar, pero VScode lo agrega porque este es un programa desarrollado por Microsoft.
-    </p>
-
-    <h3>
-        &lt;meta name="viewport" content="width=device-width initial-scale=1.0"&gt;
-    </h3>
-
-    <p>
-        Esta metaetiqueta tiene dos atributos, name que tiene como valor el nombre de la etiqueta y content que es el contenido al que hace referencia. El viewport es la parte visible del navegador donde se dibuja o renderiza el contenido HTML. Esta etiqueta es muy importante porque le dice a los dispositivos cómo es que se va a adaptar el contenido del documento, para el responsive-web-design.
-    </p>
-
-    <p>
-        Esta metaetiqueta tiene varios atributos posibles, es recomendable ver toda la información en MDN, sin embargo, los más importantes son width=device-width, con eso indica que el ancho del documento HTML se adaptará al ancho del dispositivo. 
-    </p>
-
-    <p>
-        Seguidamente aparece el atributo initial-scale, el cual es utilizado para indicar la escala inicial a la cual se va a comenzar el contenido, el valor 1.0 indica 100%. Esto es muy importante esta etiqueta para el responsive-web-design, aunque escribamos todo el código CSS necesario para que la página se adapte de forma adecuada a distintos dispositivos, no funcionará todo ese código si la etiqueta &lt;meta name="viewport" content="width=device-width initial-scale=1.0"&gt; no está presente.
-    </p>
-
-    <h3>
-        &lt;title&gt;>
-    </h3>
-    
-    <p>
-        El título o title es el nombre del documento HTML, debe ser un título referente al contenido que va a encontrar el usuario en la página web que está visitando. Es importante que el título esté entre los 55 y 65 caracteres de longitud (podemos saber cuántos caracteres tiene un texto que escribamos al subrayarlo, esta información aparece en la barra inferior de VScode). 
-    </p>
-
-    <h3>
-        &lt;meta name = "description" content = "Descripción  de la página"&gt;
-    </h3>
-
-    <p>
-        La descriptión o metaetiqueta description contendrá la descripción de la página web, la descripción se escribe como valor del atributo content. El texto de la descripción no debe sobrepasar los 165 caracteres de longitud.
-    </p>
-
-    <p>
-        La longitud del texto colocado en las etiquetas &lt;title&gt; y &lt;meta name = "description" content = "Descripción  de la página"&gt; es importante porque ambas etiquetas nos ayudarán en el SEO, estos textos de muestran en Google al buscar una página, el título donde hacemos clic normalmente para ingresar es &lt;title&gt; y la descripción que le sigue es la etiqueta &lt;meta name = "description" content = "Descripción  de la página"&gt;. La cantidad de caracteres mencionada es la que cabe justamente en la visualización del buscador, si sobrepasamos esta cantidad de caracteres apareceran puntos suspensivos en la descripción o el título mostrado en los enlaces del buscador.
-    </p>
-
-    <p>
-        También es importante dejad a todas las páginas del sitio web el mismo título y la misma descripción, es importante definir esto de forma adecuada para cada documento HTML, si no, todas las páginas podrían decir que van al Home del sitio web, por ejemplo, cuando en realidad no es así. Todo esto es importante para el SEO de nuestros proyectos. Esto afecta mucho cuando Google muestra un sublistado de las secciones que según Google son más visitadas dentro de un sitio web. Si tenemos los mismos títulos y descripción se verán enlaces y descripciones iguales en cada enlace.
-    </p>
-
-    <p>
-        La etiqueta &lt;title&gt; se reflejará visualmente en la pestaña del navegador, es el texto que aparece en ella.
-    </p>
-
-    <hr>
-
-    <h2>
-        Tabla periódica de los elementos HTML
-    </h2>
-
-    <p>
-        La tabla periódica de los elementos HTML es una metáfora donde hacemos referencia a la tabla periódica de los elementos químicos, pero con etiquetas. En esta tabla se muestran casi todas las etiquetas HTML existentes, el color se utiliza para identificar el funcionamiento de las etiquetas, esta tabla se podrá ver de mejor manera abriéndola en una pestaña nueva, puedes hacer clic en la imagen al final de este apartado para para hacerlo. 
-    </p>
-
-    <p>
-        En la parte inferior de la tabla se puede ver qué indica cada color. señalando así, el elemento raíz (html), metadatos, las etiquetas amarillas son para dar formato a texto como hacer que el texto sea negrita, itálica, para hacer referencia a una cita textual, hacer un enlace a otra página u documento, etc. 
-    </p>
-
-    <p>
-        Las etiquetas anaranjadas que son utilizadas para agrupar contenido, como div, hd, ul, etc. Las cuales se tratarán más adelante a profundidad, al igual que otras etiquetas que se mencionan en los siguientes párrafos.
-    </p>
-
-    <p>
-        Etiquetas verdes que son todas las que utilizamos en la creación de formularios.
-    </p>
-
-    <p>
-        Las etiquetas azules de la derecha (al lado de las etiquetas para fomularios) son secciones de documento, etiquetas semánticas como nav, header, article, h1, h2, etc.
-    </p>
-
-    <p>
-        Luego están los elementos interactivos que se tratarán igualmente a profundidad más adelante, como son menu, command, summary, etc.
-    </p>
-
-    <p>
-        En naranja están las etiquetas utilizadas en la creación de tablas.
-    </p>
-
-    <p>
-        Y en fucsia están las etiquetas que no son texto, como las imágenes, videos, audios, etc.
-    </p>
-    
-    <p>
-        <a href="periodic_table.html" target="_blank" title="Mostrar imagen ampliada en una pestaña nueva"><img src="../img/periodic-table-of-html-elements.png" alt="Tabla periódica de los elementos HTML" style="width: 50%;"></a>
-    </p>
-
-    <hr>
-
-    <h2>
-        Encabezados
-    </h2>
-
-    <p>
-        Estas etiquetas van desde &lt;h1&gt; a &lt;h6&gt;, los encabezados nos permiten titularizar nuestro contenido. Los niveles de encabezado generan una jerarquía semántica de contenido, pero además muestran diferencias visuales respecto a su tamaño como se puede ver en los siguientes ejemplos. Esto de la jerarquía generada por los niveles de los encabezados es por SEO, en cada documento HTML solo debe haber un solo título h1, porque cuando los algoritmos de los buscadores van y revisan nuestro código HTML de nuestro sitio o aplicaciones, siempre se fijan en el h1 para detectar cuál es el título importante de nuestro HTML. Aunque HTML no es un lenguaje de programación y no lanzará un error por tener mas de un título h1, una buena práctica es tener un solo título de este tipo para que los algoritmos sepan cuál es el texto principal.
-    </p>
-
-    <p>
-        Con el resto de etiquetas de título no sucede lo mismo, podemos tener tantos títulos &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt; ,&lt;h5&gt; y &lt;h6&gt; dependiendo de las necesidades que tengamos a la hora de crear  nuestro contenido.
-    </p>
-
-    <p>
-        Mientras menor el número de la etiqueta de encabezado, mayor importancia tendrá el contenido, siendo h1 el más relevante y el h6 el menos relevante. SI se llega a necesitar una etiqueta más allá del h6, no se podrá hacer nada y habrá que distribuir de mejor manera los encabezados.
-    </p>
-
-    <p>
-        El encabezado de tipo uno no se colocó en este ejemplo porque está al inicio de esta página y solo puede haber uno por documento HTML.
-    </p>
-
-    <h2>
-        Encabezado de tipo 2
-    </h2>
-
-    <h3>
-        Encabezado de tipo 3
-    </h3>
-
-    <h4>
-        Encabezado de tipo 4
-    </h4>
-
-    <h5>
-        Encabezado de tipo 5
-    </h5>
-
-    <h6>
-        Encabezado de tipo 6
-    </h6>
-
-    <hr>
-
-    <h2>
-        Etiquetas de texto básicas
-    </h2>
-
-    <h3>
-        Etiqueta p
-    </h3>
-
-    <p>
-        Esta etiqueta se utiliza para escribir un texto formateado en forma de párrafo en nuestro documento HTML, como está formateado como párrafo, el texto tendrá ciertos márgenes arriba, abajo y a los lados respecto a otro contenido. Es muy importante no tener texto suelto en una etiqueta, de preferencia siempre debe estar dentro de una etiqueta.
-    </p>
-
-    <p>
-        Podemos generar párrafor de prueba al escribir lorem, esto es una herramienta brindada por emmet. Si necesitamos una cantidad de palabras en específico debemos copiar el número de palabras seguido de la palabra lorem, lorem78, por ejemplo, esto generará un párrafo de 78 palabras, el siguiente párrafo fue generado con esta función.
-    </p>
-
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quam veniam dolorem, dignissimos a possimus! Nihil et quam assumenda ullam quasi corrupti, expedita delectus veniam similique ad iure facere ea blanditiis ipsa aliquid, eligendi veritatis placeat nam, facilis reiciendis sit id. Odio dolorum sed voluptas beatae dicta quod, quos perferendis veritatis, sapiente, rerum quas suscipit molestias minima voluptates! Animi, illo voluptate laudantium et commodi quaerat suscipit temporibus odio. Recusandae vitae sit ullam nihil. Vero exercitationem minus commodi facere!
-    </p>
-
-    <h3>
-        Etiqueta b
-    </h3>
-
-    <p>
-        Esta etiqueta nos permite convertir el texto en <b>negrita</b>, la b es de bold.
-    </p>
-
-    <h3>
-        Etiqueta i
-    </h3>
-
-    <p>
-        Esta etiqueta nos permite convertir el texto en itálica o cursiva <i>negrita</i>, i es de italic.
-    </p>
-
-    <h3>
-        Etiqueta sup
-    </h3>
-
-    <p>
-        Esta etiqueta nos permite represetar textos como un superíndice, E=MC<sup>2</sup>, por ejemplo.
-    </p>
-    
-    <h3>
-        Etiqueta sub
-    </h3>
-
-    <p>
-        Esta etiqueta nos permite represetar textos como un subíndice, H<sub>2</sub>O, por ejemplo.
-    </p>
-
-    <h3>
-        Etiqueta u
-    </h3>
-
-    <p>
-        Esta etiqueta nos permite subrayar <u>texto</u>, sin embargo, esto se recomienda hacerlo con CSS.
-    </p>
-
-    <h3>
-        Etiqueta mark
-    </h3>
-
-    <p>
-        Esta etiqueta nos permite subrayar <mark>texto</mark> pero con color amarillo, ocurre lo mismo que con la u, normalmente esto se recomienda hacerlo con CSS.
-    </p>
-
-    <h3>
-        Etiqueta small
-    </h3>
-
-    <p>
-        Esta etiqueta nos permite representar el texto como las letras pequeñas de los <small>términos y condiciones</small>, por ejemplo.
-    </p>
-
-    <p>
-        En la tabla periódica de los elementos HTML estas etiquetas estarán representadas por el color amarillo, no se vieron todas pero podemos verlas en HTML reference. Se vieron las más utilizadas
-    </p>
-
-    <hr>
-
-    <h2>
-        Etiquetas de texto semánticas
-    </h2>
-
-    <p>
-        Estas etiquetas aparte de darnos una referencia visual, también nos van a dar un significado. 
-    </p>
-
-    <h3>
-        Etiqueta strong
-    </h3>
-
-    <p>
-        Esta etiqueta se utiliza para dar <strong>importancia</strong> a un texto, pero visualmente se ve como si hubiesemos utilizado la etiqueta bold.
-    </p>
-
-    <h3>
-        Etiqueta em
-    </h3>
-
-    <p>
-        Esta etiqueta nos permite hacer <em>énfasis</em> a un texto, pero visualmente se ve como si hubiesemos utilizado la etiqueta i.
-    </p>
-
-    <h3>
-        Etiquetas blockquote y cite
-    </h3>
-    
-    <p>
-        Esta etiqueta la utilizamos para hacer citas en bloque, es decir, en párrafo (citas grandes), si deseamos hacer citas de algún artículo de una página por ejemplo, esta etiqueta puede llevar el atributo cite para indicar la fuente de la cita. Pero también podemos utilizar la etiqueta cite seguida el blockquote, que funciona para definir la fuente de una obra creativa. La etiqueta blockquote agrega una indentación en el texto. Visualmente la etiqueta blockquote crea una indentación. La etiqueta cite por otro lado cambia la fuente a una especie de itálica.
-    </p>
-
-    <blockquote cite="Socrates">
-        <p>
-            Yo solo sé que no sé nada.
-        </p>
-    </blockquote>
-    
-    <cite>Socrates</cite>
-
-    <p>
-        No se verán todas las etiquetas semánticas pero podemos buscarlas con la ayuda de HTML reference. 
-    </p>
-
-    <hr>
-
-    <h2>
-        Etiquetas de salto
-    </h2>
-
-    <h3>
-        Etiqueta br
-    </h3>
-    
-    <p>
-        Hay dos etiquetas de salto y la primera que veremos nos genera un salto de línea, la etiqueta para generar saltos de línea es &lt;br&gt;, por cada salto de línea que queramos deberemos escribir un &lt;br&gt;.
-    </p>
-
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum cupiditate sequi <br> provident. Numquam nulla, non minima voluptate obcaecati corrupti praesentium nesciunt sunt necessitatibus alias deserunt eligendi quia repellat pariatur, nihil<br><br> eaque ad ratione voluptas ut perspiciatis ducimus quidem et, mollitia aut! Tempora quas quidem, unde at nihil ipsum ea aliquid explicabo, voluptates molestiae rerum fugit praesentium aut, quisquam ullam? Sed exercitationem, veritatis saepe, doloremque deserunt vel repudiandae ab accusamus facere libero explicabo, et expedita.<br><br> Numquam quibusdam fugit illum, deserunt molestias facere reprehenderit consequatur. Ipsam, illo numquam. Quas fuga eveniet quos atque cupiditate? Voluptas praesentium alias sint natus voluptatibus inventore fugiat.
-    </p>
-
-    <h3>
-        Etiqueta hr
-    </h3>
-
-    <p>
-        La etiqueta &lt;hr&gt; nos agrega visualmente una línea horizontal, muchos dicen que es mejor hacer esto con CSS, con un  borden inferior o superior de alguno de los elementos. Sin embargo, esta etiqueta tiene una semántica, esta etiqueta es un salto semántico de contenido, hasta ahora se menciona esta etiqueta pero está por toda la página de este curso. Entonces, esta etiqueta es utilizada para dividir la secciones de una página, separando así el contenido.
-    </p>
-    <hr>
-
-    <h2>
-        Etiquetas de formateo
-    </h2>
-
-    <p>
-        Las etiquetas de formateo nos permiten dar un formato específico al texto.
-    </p>
-
-    <h3>
-        Etiqueta pre
-    </h3>
-
-    <p>
-        En html los preformateos hechos en el código no se mantienen, para que estos preformateos se reflejen (si es lo que queremos) debemos utilizar la etiqueta pre. La etiqueta pre cambia la tipografía pues es una de sus características.
-    </p>
-
-    <p>
-        <pre>
-            Tareas por hacer:
-            -HTML
-                -Seguir estudiando
-                -Estudiar hasta los enlaces
-                -Estudiar elementos interactivos
-            -CSS
-                -Comenzar a estudiar -CSS
-                -Copia el curso completo
-                -Subir todo a GitHub
-        </pre>
-    </p>
-
-    <h3>
-        Etiqueta code
-    </h3>
-    
-    <p>
-        Existe otra etiqueta que da un formato al texto como si fuera código, esa es la etiqueta code, se puede utilizar en conjunto con la etiqueta pre para así copiar un bloque de código respetando las indentaciones. Como se puede ver en el siguiente ejemplo.
-    </p>
-
-    <p>
-        <pre>
-            <code>
-                if coma and  punto != -1:
-                    print("El número", num, "es un decimal")
-                else:
-                    print("El número", num, "es entero")
-            </code>
-        </pre>
-    </p>
-</body>
+    <main>
+        <section>
+            <h1>
+                Curso de HTML
+            </h1>
+            
+            <p>
+                HTML es el lenguaje encargado de dar contenido y estructura a la web. Texto, imágenes, videos, etc.
+            </p>
+            
+            <p>
+                CSS es el lenguaje que da colores, tamaños y diseño en general a las páginas web.
+            </p>
+            
+            <p>
+                Los lenguajes de programación como Python y Javascript nos permiten agregar acciones a nuestras páginas web o programas, más interacción por parte del usuario. Un ejemplo de esto pueden ser los botones que nos permiten cambiar una página de estilo de día para estilo de noche o viceversa.
+            </p>
+            
+            <p>
+                Los navegadores web ya entienden estas tecnologías, no necesitamos instalar nada. Se les conoce como estándares porque todos los navegadores web utilizan estas tecnologías.
+            </p>
+            
+            <p>
+                Estos lenguajes estándares están regidos por grupos de personas que forman parte de grandes tecnologías, y son los que van delimitando cuáles son los avances que los navegadores tienen que ir aceptando en sus nuevas versiones para darnos más características a los programadores y desarrolladores web.
+            </p>
+            
+            <p>
+                Las personas encargadas de la definición de los estándares de HTML son la W3C. Podemos entrar a su página desde el link: <a href="https://www.w3.org/">https://www.w3.org/</a>. La documentación de la W3C es muy amplia y tediosa de leer.
+            </p>
+            
+            <p>
+                Además de la W3C, con el tiempo salió otro grupo de personas que se dedica a definir los estándares, son la Whatwg, podemos ver su documentación en el siguiente link: <a href="https://whatwg.org/">https://whatwg.org/</a>. Sin embargo desde hace algunos años colaboran con la W3C. Es recomendable leer la W3C en lugar de la whatwg, es prácticamente la documentación oficial, es más amigable.
+            </p>
+            
+            <p>
+               Otro sitio recomendable para aprender sobre HTML y su documentación es MDN en el siguiente link:  . Aunque no es la documentación oficial es muy utilizada por los programadores y es una documentación proporcionada por los creadores de Mozilla. Tienen documentación para HTML, CSS y Javascript.
+            </p>
+            
+            <p>
+                Otra página recomendable para consultar las funciones de las etiquetas de HTML es HTML reference, podemos verla en el siguiente link: <a href="https://htmlreference.io/">https://htmlreference.io/</a>. Nos da algunos enlaces a documentaciones, ejemplos e incluso nos menciona los atributos que puede tener una etiqueta.
+            </p>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>
+                Creación de archivos HTML
+            </h2>
+            
+            <p>
+                Los archivos HTML se crean al crear un nuevo archivo de texto y cambiando la extensión html.
+            
+                Siempre es recomendable crear carpetas para cada proyecto.
+            </p>
+            
+            <p>
+                Para iniciar una estructura HTML se puede tratar de aprender de memoria pero la realidad es que no es sencillo mantener todo en mente, una práctica común es consultar en internet cualquier información olvidada, ya que es mucha. En VScode al escribir HTML:5 nos aparecerá automáticamente la estructura básica de un documento HTML. Es muy básica pero así ahorraremos tiempo, lo importante es saber la función de cada línea del código, si se olvida, podremos consultarlo siempre en internet. Estos párrafos fueron creados con la etiqueta p de párrafo, da un formato al texto creando un salto de línea y da espaciado al texto arriba, abajo, a la izquierda y a la derecha en relación al resto de contenido.
+            </p>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>
+                Emmet
+            </h2>
+            
+            <p>
+                Emmet es una herramienta que nos permite escribir código HTML y CSS de manera muy rápida. Podemos ver su funcionamiento en la documentación que está en su página web: <a href="https://docs.emmet.io/" target="_blank">https://emmet.io/</a>.
+            </p>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>
+                Atajos en VScode
+            </h2>
+            
+            <p>
+                VScode tiene muchos atajos útiles, podemos verlos si buscamos en nuestro navegador "VScode cheat sheet" o en el siguiente link: <a href="../img/VScode cheat sheet para Windows.pdf" target="_blank">Hoja de atajos de Visual Studio Code</a>
+            </p>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>
+                ¿Qué es HTML?
+            </h2>
+            
+            <p>
+                HTML (hypertext markup language) es un lenguaje de marcas basado en etiquetas.
+            </p>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>
+                Estructura básica de HTML
+            </h2>
+            
+            <p>
+                Este documento ya posee una estructura básica de HTML, procederemos a comprender para qué funciona cada una de sus línea.
+            </p>
+            
+            <p>
+                Las etiquetas HTML comienzan con el símbolo de menor qué (&lt;) y terminan con el símbolo de mayor que (&gt;), conocidos como picoparéntesis. Hay etiquetas que abren y cierran, tienen apertura (<etiqueta>) y cierre (&lt;/etiqueta&gt;), el cierre tiene un slash (/) luego del menor que. También hay etiquetas que tienen una etiqueta de apertura solamente y son mejor conocidas como selfclosing.
+            </p>
+            
+            <p>
+                Las etiquetas HTML pueden tener atributos, más adelante se tratarán a profundidad en este curso, los atributos afectan las etiquetas de formas específicas y tienen su propia función.
+            </p>
+            
+            <p>
+                Las etiquetas y atributos se escriben en minúsculas como buena práctica (excepto por la etiqueta DOCTYPE), aunque HTML no distingue mayúsculas y minúsculas.
+            </p>
+            
+            <p>
+                La etiqueta principal de un documento es html, la cual está compuesta por dos etiquetas más, la etiqueta <b>head</b> y la etiqueta <b>body</b>. Todo lo que esté dentro de la etiqueta <b>head</b> es para enlazar otro tipo de archivo como las hojas de estilos, archivos Javascript, algunas imágenes que sirven a los sitios web para los íconos que se instalan en los navegadores o dispositivos móviles (el favicon que es el ícono que se muesta en las pestaña donde abrimos la página), títulos y descripciones que tienen que ver con el SEO de las páginas en los motores de búsqueda, etc.
+            </p>
+            
+            <p>
+                Toda la información guardada por la etiqueta <b>head</b> es considerada meta-información, porque es información que habla de la página pero visualmente no es vista por el usuario, es información utilizada por los algoritmos dedicados a posicionar las páginas en los buscadores.
+            </p>
+            
+            <p>
+                Todo lo que queramos que se vea en el cuerpo de la página debe escribirse en la etiqueta <b>body</b>, como lo dice su nombre, es el cuerpo de la página.
+            </p>
+            
+            <p>
+                Es importante respetar la jerarquía de las etiquetas, no podemos por ejemplo abrir la etiqueta <b>body</b> dentro del <b>head</b> y cerrarla fuera del body. Son etiquetas que están al mismo nivel y van separadas, esto ocurre con todas las etiquetas. HTML al no ser un lenguaje de programación no nos mostrará errores, pero cuando tenemos algo mal cerrado podría no llegar a mostrarse correctamente.
+            </p>
+            
+            <p>
+                Otro aspecto importante en HTML es la indentación, es el espaciado que creamos con la tecla tab y nos muestra claramente la jerarquía de las etiquetas, cómo están posicionadas unas dentro de otras.
+            </p>
+            
+            <p>
+                En el siguiente ejemplo veremos una etiqueta sin indentación seguida de otra con indentación.
+            </p>
+            
+            <p>
+                <pre>
+                    <code>
+                        &lt;h1&gt;
+                        &lt;p&gt;
+                        Este texto no tiene indentación, no se ve claramente cómo es la jerarquía.
+                        &lt;/p&gt;
+                        &lt;/h1&gt;
+                    </code>
+                </pre>
+            
+                <pre>
+                    <code>
+                        &lt;h1&gt;
+                            &lt;p&gt;
+                                Este texto si tiene indentación, se ve claramente cómo es la jerarquía.
+                            &lt;/p&gt;
+                        &lt;/h1&gt;
+                    </code>
+                </pre>
+            </p>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>
+                Comentarios en HTML
+            </h2>
+            
+            <p>
+                Un comentario en HTML o en lenguajes de programación como Javascript son textos o notas que no queremos que el navegador interprete, nos sirven para dejar indicaciones para los programadores. En HTML los comentarios inician con menor que (<), signo de exclamación y dos guiones (-), y los cerramos con dos guiones(-) y un mayor que (>).
+            </p>
+            
+            <!--Esto es un comentario de HTML-->
+            
+            <p>
+                Es posible convertir en comentario cualquier parte de un código por medio de atajos, en el caso de VScode debemos seleccionar el código o texto a convertir en comentario y presionar Ctrl+K seguido de Ctrl+C.
+            </p>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>
+                Etiqueta HTML y el atributo lang 
+            </h2>
+            
+            <p>
+                La etiqueta HTML es la que se encarga de contener la cabeza y cuerpo de nuestro documento (head y body). Desde HTML 5 es importante por cuestiones de posicionamiento de contenido, agregar el idioma en el cuál nosotros vamos a escribir el contenido de nuestro documento HTML.
+            </p>
+            
+            <p>
+                El atributo lang tiene por defecto el valor en que significa inglés por english, aunque podemos ser específicos con el lenguaje hasta el punto de especificar la región pues hay ciertas expresiones que son propias de una región, no es lo mismo español de españa que español de mexico o de Venezuela, por ejemplo. Para japonés se usa jp, para español utilizamos es, esto lo podemos buscar en internet.
+            </p>
+            
+            <p>
+                Si llegasemos a necesitar señalar que el español es de algún área en específico debemos usar el guion (-) seguido del dominio del país en mayúsculas, por ejemplo VE en el caso de Venezuela. Esto es solo en casos muy especiales donde el contexto del contenido es muy particular de algún país en específico.
+            </p>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>
+                Etiqueta DOCTYPE
+            </h2>
+            
+            <p>
+                Antes de HTML 5 existieron las versiones anteriores de HTML y una mezcla entre HTML y XML que es otro lenguaje de marcado, en cada una de estas versiones había diferentes tipos de documento, por lo cuál la etiqueta DOCTYPE resultaba ser muy larga y engorrosa, porque la etiqueta iba acompañada de una URL hacia la especificación del tipo de documento. Esto ya no se utiliza, pero antes dependiendo del tipo de documento que especificabamos para escribir, algunas etiquetas eran soportadas y otras no o el comportamiento y visualización de las mismas se modificaba.
+            </p>
+            
+            <p>
+                Con HTML 5 la W3C se estableció que solo iba a haber un solo tipo de documento, y para especificar que es un tipo de documento con la nueva versión simplente hay que colocar &lt;!DOCTYPE html&gt;
+            </p>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>
+                Metaetiquetas básicas
+            </h2>
+            
+            <h3>
+                &lt;meta charset="UTF-8"&gt;
+            </h3>
+            
+            <p>
+                Charset es el juego de caracteres en el cual está codificada una página (esto tiene que ver con los idiomas), UTF-8 es el juego de caracteres universal estándar, por ejemplo hay caracteres que no se utililzan en inglés y solo en español como la letra ñ. Sin la etiqueta &lt;meta charset="UTF-8"&gt; la letra Ñ y los acentos no se representarían de forma correcta, incluso algunas dieresis. Esta etiqueta permite que estos caracteres se muestren de forma correcta en el navegador. Por esta razón es muy importante agregar esta metaetiqueta &lt;meta charset="UTF-8"&gt;. Algunos navegadores ya reconocen estos caracteres pero su adición forma parte de las buenas prácticas. 
+            </p>
+            
+            <p>
+                Los caracteres especiales se pueden codificar igualmente sin necesidad de la etiqueta &lt;meta charset="UTF-8"&gt;, de hecho lo estamos haciendo para poder agregar los picoparéntesis sin alterar el código, pero esto si es que se quiere hacer en algún navegador viejo, como tal no es una buena práctica y lleva mucho más trabajo. En el siguiente link podrás ver cómo escribir los caracteres especiales en HTML: <a href="../img/Caracteres especiales en HTML.pdf" target="_blank">Caracteres especiales en HTML</a>.
+            </p>
+            
+            <h3>
+                &lt;meta http-equiv="X-UA-Compatible" content:"IE=edge"&gt;
+            </h3>
+            
+            <p>
+                Esta etiqueta no es estándar e incluso de puede borrar, pero se utiliza para indicar al navegador Internet Explorer que trate de igualar la visualización del documento a la brindada por edge. Como ya no se utiliza IE se puede quitar, pero VScode lo agrega porque este es un programa desarrollado por Microsoft.
+            </p>
+            
+            <h3>
+                &lt;meta name="viewport" content="width=device-width initial-scale=1.0"&gt;
+            </h3>
+            
+            <p>
+                Esta metaetiqueta tiene dos atributos, name que tiene como valor el nombre de la etiqueta y content que es el contenido al que hace referencia. El viewport es la parte visible del navegador donde se dibuja o renderiza el contenido HTML. Esta etiqueta es muy importante porque le dice a los dispositivos cómo es que se va a adaptar el contenido del documento, para el responsive-web-design.
+            </p>
+            
+            <p>
+                Esta metaetiqueta tiene varios atributos posibles, es recomendable ver toda la información en MDN, sin embargo, los más importantes son width=device-width, con eso indica que el ancho del documento HTML se adaptará al ancho del dispositivo. 
+            </p>
+            
+            <p>
+                Seguidamente aparece el atributo initial-scale, el cual es utilizado para indicar la escala inicial a la cual se va a comenzar el contenido, el valor 1.0 indica 100%. Esto es muy importante esta etiqueta para el responsive-web-design, aunque escribamos todo el código CSS necesario para que la página se adapte de forma adecuada a distintos dispositivos, no funcionará todo ese código si la etiqueta &lt;meta name="viewport" content="width=device-width initial-scale=1.0"&gt; no está presente.
+            </p>
+            
+            <h3>
+                &lt;title&gt;>
+            </h3>
+            
+            <p>
+                El título o title es el nombre del documento HTML, debe ser un título referente al contenido que va a encontrar el usuario en la página web que está visitando. Es importante que el título esté entre los 55 y 65 caracteres de longitud (podemos saber cuántos caracteres tiene un texto que escribamos al subrayarlo, esta información aparece en la barra inferior de VScode). 
+            </p>
+            
+            <h3>
+                &lt;meta name = "description" content = "Descripción  de la página"&gt;
+            </h3>
+            
+            <p>
+                La descriptión o metaetiqueta description contendrá la descripción de la página web, la descripción se escribe como valor del atributo content. El texto de la descripción no debe sobrepasar los 165 caracteres de longitud.
+            </p>
+            
+            <p>
+                La longitud del texto colocado en las etiquetas &lt;title&gt; y &lt;meta name = "description" content = "Descripción  de la página"&gt; es importante porque ambas etiquetas nos ayudarán en el SEO, estos textos de muestran en Google al buscar una página, el título donde hacemos clic normalmente para ingresar es &lt;title&gt; y la descripción que le sigue es la etiqueta &lt;meta name = "description" content = "Descripción  de la página"&gt;. La cantidad de caracteres mencionada es la que cabe justamente en la visualización del buscador, si sobrepasamos esta cantidad de caracteres apareceran puntos suspensivos en la descripción o el título mostrado en los enlaces del buscador.
+            </p>
+            
+            <p>
+                También es importante dejad a todas las páginas del sitio web el mismo título y la misma descripción, es importante definir esto de forma adecuada para cada documento HTML, si no, todas las páginas podrían decir que van al Home del sitio web, por ejemplo, cuando en realidad no es así. Todo esto es importante para el SEO de nuestros proyectos. Esto afecta mucho cuando Google muestra un sublistado de las secciones que según Google son más visitadas dentro de un sitio web. Si tenemos los mismos títulos y descripción se verán enlaces y descripciones iguales en cada enlace.
+            </p>
+            
+            <p>
+                La etiqueta &lt;title&gt; se reflejará visualmente en la pestaña del navegador, es el texto que aparece en ella.
+            </p>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>
+                Tabla periódica de los elementos HTML
+            </h2>
+            
+            <p>
+                La tabla periódica de los elementos HTML es una metáfora donde hacemos referencia a la tabla periódica de los elementos químicos, pero con etiquetas. En esta tabla se muestran casi todas las etiquetas HTML existentes, el color se utiliza para identificar el funcionamiento de las etiquetas, esta tabla se podrá ver de mejor manera abriéndola en una pestaña nueva, puedes hacer clic en la imagen al final de este apartado para para hacerlo. 
+            </p>
+            
+            <p>
+                En la parte inferior de la tabla se puede ver qué indica cada color. señalando así, el elemento raíz (html), metadatos, las etiquetas amarillas son para dar formato a texto como hacer que el texto sea negrita, itálica, para hacer referencia a una cita textual, hacer un enlace a otra página u documento, etc. 
+            </p>
+            
+            <p>
+                Las etiquetas anaranjadas que son utilizadas para agrupar contenido, como div, hd, ul, etc. Las cuales se tratarán más adelante a profundidad, al igual que otras etiquetas que se mencionan en los siguientes párrafos.
+            </p>
+            
+            <p>
+                Etiquetas verdes que son todas las que utilizamos en la creación de formularios.
+            </p>
+            
+            <p>
+                Las etiquetas azules de la derecha (al lado de las etiquetas para fomularios) son secciones de documento, etiquetas semánticas como nav, header, article, h1, h2, etc.
+            </p>
+            
+            <p>
+                Luego están los elementos interactivos que se tratarán igualmente a profundidad más adelante, como son menu, command, summary, etc.
+            </p>
+            
+            <p>
+                En naranja están las etiquetas utilizadas en la creación de tablas.
+            </p>
+            
+            <p>
+                Y en fucsia están las etiquetas que no son texto, como las imágenes, videos, audios, etc.
+            </p>
+            
+            <p>
+                <a href="periodic_table.html" target="_blank" title="Mostrar imagen ampliada en una pestaña nueva"><img src="../img/periodic-table-of-html-elements.png" alt="Tabla periódica de los elementos HTML" style="width: 50%;"></a>
+            </p>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>
+                Encabezados
+            </h2>
+            
+            <p>
+                Estas etiquetas van desde &lt;h1&gt; a &lt;h6&gt;, los encabezados nos permiten titularizar nuestro contenido. Los niveles de encabezado generan una jerarquía semántica de contenido, pero además muestran diferencias visuales respecto a su tamaño como se puede ver en los siguientes ejemplos. Esto de la jerarquía generada por los niveles de los encabezados es por SEO, en cada documento HTML solo debe haber un solo título h1, porque cuando los algoritmos de los buscadores van y revisan nuestro código HTML de nuestro sitio o aplicaciones, siempre se fijan en el h1 para detectar cuál es el título importante de nuestro HTML. Aunque HTML no es un lenguaje de programación y no lanzará un error por tener mas de un título h1, una buena práctica es tener un solo título de este tipo para que los algoritmos sepan cuál es el texto principal.
+            </p>
+            
+            <p>
+                Con el resto de etiquetas de título no sucede lo mismo, podemos tener tantos títulos &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt; ,&lt;h5&gt; y &lt;h6&gt; dependiendo de las necesidades que tengamos a la hora de crear  nuestro contenido.
+            </p>
+            
+            <p>
+                Mientras menor el número de la etiqueta de encabezado, mayor importancia tendrá el contenido, siendo h1 el más relevante y el h6 el menos relevante. SI se llega a necesitar una etiqueta más allá del h6, no se podrá hacer nada y habrá que distribuir de mejor manera los encabezados.
+            </p>
+            
+            <p>
+                El encabezado de tipo uno no se colocó en este ejemplo porque está al inicio de esta página y solo puede haber uno por documento HTML.
+            </p>
+            
+            <h2>
+                Encabezado de tipo 2
+            </h2>
+            
+            <h3>
+                Encabezado de tipo 3
+            </h3>
+            
+            <h4>
+                Encabezado de tipo 4
+            </h4>
+            
+            <h5>
+                Encabezado de tipo 5
+            </h5>
+            
+            <h6>
+                Encabezado de tipo 6
+            </h6>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>
+                Etiquetas de texto básicas
+            </h2>
+            
+            <h3>
+                Etiqueta p
+            </h3>
+            
+            <p>
+                Esta etiqueta se utiliza para escribir un texto formateado en forma de párrafo en nuestro documento HTML, como está formateado como párrafo, el texto tendrá ciertos márgenes arriba, abajo y a los lados respecto a otro contenido. Es muy importante no tener texto suelto en una etiqueta, de preferencia siempre debe estar dentro de una etiqueta.
+            </p>
+            
+            <p>
+                Podemos generar párrafor de prueba al escribir lorem, esto es una herramienta brindada por emmet. Si necesitamos una cantidad de palabras en específico debemos copiar el número de palabras seguido de la palabra lorem, lorem78, por ejemplo, esto generará un párrafo de 78 palabras, el siguiente párrafo fue generado con esta función.
+            </p>
+            
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quam veniam dolorem, dignissimos a possimus! Nihil et quam assumenda ullam quasi corrupti, expedita delectus veniam similique ad iure facere ea blanditiis ipsa aliquid, eligendi veritatis placeat nam, facilis reiciendis sit id. Odio dolorum sed voluptas beatae dicta quod, quos perferendis veritatis, sapiente, rerum quas suscipit molestias minima voluptates! Animi, illo voluptate laudantium et commodi quaerat suscipit temporibus odio. Recusandae vitae sit ullam nihil. Vero exercitationem minus commodi facere!
+            </p>
+            
+            <h3>
+                Etiqueta b
+            </h3>
+            
+            <p>
+                Esta etiqueta nos permite convertir el texto en <b>negrita</b>, la b es de bold.
+            </p>
+            
+            <h3>
+                Etiqueta i
+            </h3>
+            
+            <p>
+                Esta etiqueta nos permite convertir el texto en itálica o cursiva <i>negrita</i>, i es de italic.
+            </p>
+            
+            <h3>
+                Etiqueta sup
+            </h3>
+            
+            <p>
+                Esta etiqueta nos permite represetar textos como un superíndice, E=MC<sup>2</sup>, por ejemplo.
+            </p>
+            
+            <h3>
+                Etiqueta sub
+            </h3>
+            
+            <p>
+                Esta etiqueta nos permite represetar textos como un subíndice, H<sub>2</sub>O, por ejemplo.
+            </p>
+            
+            <h3>
+                Etiqueta u
+            </h3>
+            
+            <p>
+                Esta etiqueta nos permite subrayar <u>texto</u>, sin embargo, esto se recomienda hacerlo con CSS.
+            </p>
+            
+            <h3>
+                Etiqueta mark
+            </h3>
+            
+            <p>
+                Esta etiqueta nos permite subrayar <mark>texto</mark> pero con color amarillo, ocurre lo mismo que con la u, normalmente esto se recomienda hacerlo con CSS.
+            </p>
+            
+            <h3>
+                Etiqueta small
+            </h3>
+            
+            <p>
+                Esta etiqueta nos permite representar el texto como las letras pequeñas de los <small>términos y condiciones</small>, por ejemplo.
+            </p>
+            
+            <p>
+                En la tabla periódica de los elementos HTML estas etiquetas estarán representadas por el color amarillo, no se vieron todas pero podemos verlas en HTML reference. Se vieron las más utilizadas
+            </p>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>
+                Etiquetas de texto semánticas
+            </h2>
+            
+            <p>
+                Estas etiquetas aparte de darnos una referencia visual, también nos van a dar un significado. 
+            </p>
+            
+            <h3>
+                Etiqueta strong
+            </h3>
+            
+            <p>
+                Esta etiqueta se utiliza para dar <strong>importancia</strong> a un texto, pero visualmente se ve como si hubiesemos utilizado la etiqueta bold.
+            </p>
+            
+            <h3>
+                Etiqueta em
+            </h3>
+            
+            <p>
+                Esta etiqueta nos permite hacer <em>énfasis</em> a un texto, pero visualmente se ve como si hubiesemos utilizado la etiqueta i.
+            </p>
+            
+            <h3>
+                Etiquetas blockquote y cite
+            </h3>
+            
+            <p>
+                Esta etiqueta la utilizamos para hacer citas en bloque, es decir, en párrafo (citas grandes), si deseamos hacer citas de algún artículo de una página por ejemplo, esta etiqueta puede llevar el atributo cite para indicar la fuente de la cita. Pero también podemos utilizar la etiqueta cite seguida el blockquote, que funciona para definir la fuente de una obra creativa. La etiqueta blockquote agrega una indentación en el texto. Visualmente la etiqueta blockquote crea una indentación. La etiqueta cite por otro lado cambia la fuente a una especie de itálica.
+            </p>
+            
+            <blockquote cite="Socrates">
+                <p>
+                    Yo solo sé que no sé nada.
+                </p>
+            </blockquote>
+            
+            <cite>Socrates</cite>
+            
+            <p>
+                No se verán todas las etiquetas semánticas pero podemos buscarlas con la ayuda de HTML reference. 
+            </p>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>
+                Etiquetas de salto
+            </h2>
+            
+            <h3>
+                Etiqueta br
+            </h3>
+            
+            <p>
+                Hay dos etiquetas de salto y la primera que veremos nos genera un salto de línea, la etiqueta para generar saltos de línea es &lt;br&gt;, por cada salto de línea que queramos deberemos escribir un &lt;br&gt;.
+            </p>
+            
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum cupiditate sequi <br> provident. Numquam nulla, non minima voluptate obcaecati corrupti praesentium nesciunt sunt necessitatibus alias deserunt eligendi quia repellat pariatur, nihil<br><br> eaque ad ratione voluptas ut perspiciatis ducimus quidem et, mollitia aut! Tempora quas quidem, unde at nihil ipsum ea aliquid explicabo, voluptates molestiae rerum fugit praesentium aut, quisquam ullam? Sed exercitationem, veritatis saepe, doloremque deserunt vel repudiandae ab accusamus facere libero explicabo, et expedita.<br><br> Numquam quibusdam fugit illum, deserunt molestias facere reprehenderit consequatur. Ipsam, illo numquam. Quas fuga eveniet quos atque cupiditate? Voluptas praesentium alias sint natus voluptatibus inventore fugiat.
+            </p>
+            
+            <h3>
+                Etiqueta hr
+            </h3>
+            
+            <p>
+                La etiqueta &lt;hr&gt; nos agrega visualmente una línea horizontal, muchos dicen que es mejor hacer esto con CSS, con un  borden inferior o superior de alguno de los elementos. Sin embargo, esta etiqueta tiene una semántica, esta etiqueta es un salto semántico de contenido, hasta ahora se menciona esta etiqueta pero está por toda la página de este curso. Entonces, esta etiqueta es utilizada para dividir la secciones de una página, separando así el contenido.
+            </p>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>
+                Etiquetas de formateo
+            </h2>
+            
+            <p>
+                Las etiquetas de formateo nos permiten dar un formato específico al texto.
+            </p>
+            
+            <h3>
+                Etiqueta pre
+            </h3>
+            
+            <p>
+                En html los preformateos hechos en el código no se mantienen, para que estos preformateos se reflejen (si es lo que queremos) debemos utilizar la etiqueta pre. La etiqueta pre cambia la tipografía pues es una de sus características.
+            </p>
+            
+            <p>
+                <pre>
+                    Tareas por hacer:
+                    -HTML
+                        -Seguir estudiando
+                        -Estudiar hasta los enlaces
+                        -Estudiar elementos interactivos
+                    -CSS
+                        -Comenzar a estudiar -CSS
+                        -Copia el curso completo
+                        -Subir todo a GitHub
+                </pre>
+            </p>
+            
+            <h3>
+                Etiqueta code
+            </h3>
+            
+            <p>
+                Existe otra etiqueta que da un formato al texto como si fuera código, esa es la etiqueta code, se puede utilizar en conjunto con la etiqueta pre para así copiar un bloque de código respetando las indentaciones. Como se puede ver en el siguiente ejemplo.
+            </p>
+            
+            <p>
+                <pre>
+                    <code>
+                        if coma and  punto != -1:
+                            print("El número", num, "es un decimal")
+                        else:
+                            print("El número", num, "es entero")
+                    </code>
+                </pre>
+            </p>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2>
+                Etiquetas semánticas estructurales
+            </h2>
+            
+            <p>
+                Estas etiquetas nos permiten definir zonas de maquetación, la maquetación es el proceso de delimitar cuál es el área de las diferentes secciones de nuestro sitio web, por ejemplo, la cabecera, el pie de página, el contenido principal, el contenido lateral, etc.
+            </p>
+            
+            <p>
+                Si buscamos "estructura semántica html5" aparecerán varias imágenes que nos muestran cómo es la semántica de un sitio web. Cuando vino el estándar de HTML 5 se crearon las etiquetas semánticas porque antes para definir las zonas de contenido se utilizaba solo la etiqueta &lt;div&gt;, esta es una etiqueta contenedora que no tiene semántica. Al inspeccionar páginas o librerías como bootstrap podemos llegar a ver el uso excesivo de divs para delimitar las áreas de contenido, haciendo difícil ver algunas veces donde abría un div y donde cerraba.
+            </p>
+            
+            <p>
+               A partir de HTML 5 nacen nuevas etiquetas contenedoras con cierto significado, las veremos a continuación. Es importante mencionar que el proceso de maquetación dependerá de cómo queramos planificar el diseño de nuestras aplicaciones o sitios web. Una cabecera puede estar abajo cuando creamos una aplicación para celular, por ejemplo.
+            </p>
+            
+            <h3>
+                Etiqueta &lt;header&gt;
+            </h3>
+            
+            <p>
+                Esta etiqueta representa la cabecera de un sitio o de una sección
+            </p>
+            
+            <h3>
+                Etiqueta &lt;main&gt;
+            </h3>
+            
+            <p>
+                Esta etiqueta representa la sección principal del documento, así como el h1 que solo puede estar presente una vez por documento, la etiqueta main solo puede presentarse una vez en un documento HTML.
+            </p>
+            
+            <h3>
+                Etiqueta &lt;footer&gt;
+            </h3>
+            
+            <p>
+                Esta etiqueta representa el pie de página de un sitio web o de una sección del sitio
+            </p>
+            
+            <h3>
+                Etiqueta &lt;nav&gt;
+            </h3>
+            
+            <p>
+                Esta etiqueta representa una navegación, es decir, un conjunto de enlaces que formen un menú de navegación o una botonera.
+            </p>
+            
+            <h3>
+                Etiqueta &lt;article&gt;
+            </h3>
+            
+            <p>
+                Esta etiqueta representa una sección de auto-contenido, es decir, que por si sola, esa sección se entiende sin necesidad de tener contexto de toda la interfaz del sitio.
+            </p>
+            
+            <h3>
+                Etiqueta &lt;aside&gt;
+            </h3>
+            
+            <p>
+                Esta etiqueta representa un contenido complementario o secundario, como las listas de enlaces a artículos relacionados al contenido principal, propagandas, etc.
+            </p>
+            
+            <h3>
+                Etiqueta &lt;section&gt;
+            </h3>
+            
+            <p>
+                La etiqueta section representa una sección de contenido genérico. Mucha gente discute si el article va dentro de un section o viceversa, pero según la documentación, ambos escenarios son válidos. La semántica es muy subjetivo en base al tipo de contenido que vayamos definiendo en nuestro sitio web.
+            </p>
+            
+            <h3>
+                Etiqueta &lt;address&gt;
+            </h3>
+            <p>
+                La etiqueta adress se utiliza para representar una información de contacto o dirección física.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            
+        </section>
+    </main>
+    </body>
 </html>
