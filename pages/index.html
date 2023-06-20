@@ -689,7 +689,55 @@
         <hr>
 
         <section>
-            
+            <h2>
+                Etiquetas de línea y de bloque
+            </h2>
+
+            <p>
+                Este concepto se ve más a fondo en el curso de CSS, pero desde HTML es importante entender que hay un conjunto de etiquetas que trabajan en línea y otro conjunto que trabajan en bloque.
+            </p>
+
+            <p>
+                La etiqueta de bloque por excelencia es la etiqueta div y la etiqueta de línea por excelencia es la etiqueta span. La etiqueta span de igual manera que la div no tiene contenido semántico, esto lo podemos corroborar en HTML reference.
+            </p>
+
+            <p>
+                Una etiqueta de bloque es aquella que genera saltos de línea con sus etiquetas hermanas. Van a generar un salto de línea tanto arriba como abajo (aplicaremos un color para ver qué tanto espacio ocupan estas etiquetas, sin embargo, esto no es recomendable hacerlo con HTML sino con CSS). Las etiquetas de bloque también ocupan todo el ancho disponible en pantalla, veremos un ejemplo en el siguientte elemento, el contenido de la etiqueta acaba y aún así el elemento abarca todo el ancho de la pantalla.
+            </p>
+
+            <div style="background-color: yellow;">
+                Esto es una etiqueta de bloque.
+            </div>
+
+            <p>
+                Las etiquetas de línea no generan saltos de línea y solo ocupa el espacio necesario para su contenido, podemos ver un ejemplo en el siguiente elemento, el color llega hasta donde termina el contenido de la etiqueta, a diferencia de la etiqueta de bloque que abarca todo el ancho más allá del espacio requerido por su contenido. Las etiquetas de línea solo hacen salto de línea cuando ya no hay más espacio, aunque nosotros hagamos salto de línea en el código, como se ha estado viendo. Las etiquetas de línea se ubicarán una seguida de la otra en una misma línea.
+            </p>
+
+            <span style="background-color: greenyellow;">
+                Esta es una etiqueta de línea.
+            </span>
+            <span style="background-color: rosybrown;">
+                Esta es una etiqueta de línea.
+            </span>
+            <span style="background-color: paleturquoise;">
+                Esta es una etiqueta de línea.
+            </span>
+            <span style="background-color: violet;">
+                Esta es una etiqueta de línea.
+            </span>
+            <span style="background-color: aquamarine;">
+                Esta es una etiqueta de línea. Se provoca un salto de línea porque ya no cabe en el espacio disponible en la línea anterior.
+            </span>
+
+            <p>
+                La mayoría de las etiquetas HTML van a ser de naturaleza de bloque o de naturaleza de línea, hay varios ejemplos, pero debemos tener muy en cuenta que los elementos multimedia como videos o imágenes trabajan en línea, al igual que los enlaces.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Estilos en HTML</h2>
         </section>
     </main>
     </body>
