@@ -7,6 +7,12 @@
     <meta name="description" content="En esta página estamos aprendiendo los fundamentos de HTML con @jonmircha">
     <title>Curso de HTML 5</title>
     <link rel="icon" href="../img/html.png">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <style>
+        h2{
+            color: orangered;
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -689,6 +695,7 @@
         <hr>
 
         <section>
+
             <h2>
                 Etiquetas de línea y de bloque
             </h2>
@@ -737,7 +744,27 @@
         <hr>
 
         <section>
-            <h2>Estilos en HTML</h2>
+            <h2>Estilos CSS en HTML</h2>
+
+            <P>
+                Existen tres formas de aplicar estilos al HTML o hojas de estilos en casdada (CSS), una forma ya la vimos y es con el atributo <span style="color: yellow; background-color: black; font-weight: bold;">style</span>, como se hizo en este caso con la palabra style, el atributo tiene como valor una propiedad de estilo, dos puntos (:) y el valor de la propiedad y terminamos con punto y coma, las propiedades estáran separadas entre sí por un punto y coma (;).
+            </P>
+
+            <p>
+                La otra forma es estableciendo una etiqueta style en el head del documento html, y dentro de esa etiqueta podremos escribir el código CSS directamente, así agregamos el color a los títulos h2 (el color anaranjado). Los estilos también funcionarán si se utiliza la etiqueta style en el head, sin embargo, la buena práctica es usarla en el head (ver el head de este documento para ver el ejemplo). 
+            </p>
+
+            <p>
+                La tercera forma y la más correcta de aplicar estilos a un documento es HTML es por medio de una archivo .css externo, este archivo se enlaza al documento HTML por medio de una etiqueta &lt;link&gt;. Esta lleva el atriuto href para copiar la ruta del archivo y el atributo rel que nos permite indicar a qué tipo de documento hace referencia el enlace que se está haciendo, el valor de rel es stylesheet cuando vamos a enlazar una hoja de estilos en cascada, así se aplicó el estilo al h1 de este documento y se cambió la fuente de esta página HTML.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>
+                Scripts en HTML
+            </h2>
         </section>
     </main>
     </body>
