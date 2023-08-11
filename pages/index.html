@@ -790,6 +790,33 @@
             <h2>
                 imágenes
             </h2>
+
+            <p>
+                La etiqueta para agregar imágenes a nuestro html es la etiqueta img, es una etiqueta self-closing, no tiene contenido interno y lleva el atributo src para colocar la dirección de la imagen dentro del proyecto. También lleva el atributo alt que tendrá como valor un texto alternativo que explica qué se muestra en la imagen. El texto alternativo se muestra cuando la imagen no carga por problemas de conexión u cualquier otra razón.
+            </p>
+
+            <p>
+                El texto alternativo es importante para los screen readers, que son programas utilizados por las personas con discapacidad. De esa forma el screen reader dará con una descripción de la imagen mostrada. Recordemos que aunque se muestre la imagen el screen reader leerá ese texto alternativo, no solo es un texto que se mostrará cuando la imagen no cargue.
+            </p>
+
+            <img src="" alt="Este es el texto alternativo de una imagen que no carga">
+
+            <p>
+                La etiqueta img acepta todos los formatos soportados por la etiqueta img, los más populares son jpg, png, svg y gif. Algunas veces las imágenes pueden ser demasiado grandes, por lo que hay que cambiar su tamaño, esto en HTML se puede hacer con los atributos width (ancho) y height(alto), aunque en realidad esto viene siendo parte del estilo, así que la practica correcta es hacerlo con código CSS. Las medidas de altura y anchura se colocan de forma numérica, este número es la medida en pixeles, pero esto es algo básico, hay muchas más formas de establecer la medida de una imagen, solo que se verá en el curso de CSS (en este caso estableceremos la medida al 25%).
+            </p>
+
+            <img src="../img/perro.png" alt="png" width="25%">
+            <img src="../img/perro.gif" alt="gif" width="25%">
+            <img src="../img/perro.jpeg" alt="jpg"width="25%">
+            <img src="../img/perro.svg" alt="svg" width="25%">
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>
+                Vectores
+            </h2>
         </section>
     </main>
     </body>
