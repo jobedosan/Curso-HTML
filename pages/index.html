@@ -976,9 +976,188 @@
             </h2>
 
             <p>
+                Las listas pueden ser ordenadas, desordenadas o de definición.
+            </p>
+
+            <h3>
+                Listas ordenadas
+            </h3>
+
+            <p>
+                La etiqueta para crear listas ordenadas es &lt;ol&gt; de ordered list, esta etiqueta tiene apertura y cierra. Dentro de la etiqueta &lt;ol&gt; se copiará cada elemento de la lista dentro de una etiqueta &lt;li&gt; de list item. 
+            </p>
+
+            <h4>Estaciones del año</h4>
+            <ol>
+                <li>
+                    Primavera
+                </li>
+                <li>
+                    Verano
+                </li>
+                <li>
+                    Otoño
+                </li>
+                <li>
+                    Invierno
+                </li>
+            </ol>
+            
+            <p>
+                Es importante mencionar que existen algunos atributos interesantes para las listas, estos nos permiten cambiar cómo se numerarán las listas o si serán alfabetizadas, las listas podrán tener números romanos en mayúscula o minúscula, números arábicos, letras mayúsculas o minúsculas en orden alfabético. También nos permiten establecer un número diferente de inicio o una letra distinta.
+            </p>
+            
+
+            <p>
+                Para que la lista empiece por un número o letra distinto se usará el atributo start como se puede ver en la siguiente etiqueta &lt;ol&gt;, la lista inicia con el número 3 porque así lo especificamos.
+            </p>
+
+            <h4>Estaciones del año</h4>
+            <ol start="3">
+                <li>
+                    Primavera
+                </li>
+                <li>
+                    Verano
+                </li>
+                <li>
+                    Otoño
+                </li>
+                <li>
+                    Invierno
+                </li>
+            </ol>
+            
+            <p>
+                También podemos usar el atributo reversed para que la lista tenga un orden inverso, como se puede ver en la siguiente etiqueta &lt;ol&gt;, este atributo no tiene un valor porque es booleano.
+            </p>
+            
+            <h4>Estaciones del año</h4>
+            <ol reversed>
+                <li>
+                    Primavera
+                </li>
+                <li>
+                    Verano
+                </li>
+                <li>
+                    Otoño
+                </li>
+                <li>
+                    Invierno
+                </li>
+            </ol>
+
+            <p>
+                Para cambiar los símbolos usados para ordenar la lista usamos el atributo type, este atributo tiene como valores 1 que es para números arábicos, A que es para orden alfabético en mayúsculas, a para orden alfabético en minúsculas, I para numeración romana en mayúscula e i para numeración romana en minúscula. La siguiente lista tiene un atributo type con el valor A para que se ordene con letras alfabéticas en mayúscula.
+            </p>
+            
+            <h4>Estaciones del año</h4>
+            <ol type="A">
+                <li>
+                    Primavera
+                </li>
+                <li>
+                    Verano
+                </li>
+                <li>
+                    Otoño
+                </li>
+                <li>
+                    Invierno
+                </li>
+            </ol>
+
+            <p>
+                Al momento de utilizar letras podemos emplear reversed como con los números y también el atributo start, sin embargo debemos tener en cuenta que aunque usemos letras para ordenar la lista, en realidad el valor correspondiente para el atributo start será un número arábico, siendo el 1 la letra A, el 2 la letra B y así sucesivamente.
+            </p>
+
+            <p>
+                Al combinar reversed y un inicio de lista distinto encontraremos comportamientos extraños dependiendo de lo que hagamos, por ejemplo, si tenemos un orden alfabético, solo cuatro &lt;li&gt; y colocamos el atributo reversed con el valor 3, estaremos diciendo que la lista va invertida desde la letra C hasta una letra antes de la A, porque son 4 elementos (C, B, A y ?). 
+            </p>
+
+            <p>
+                Esa letra antes de la A es reemplazada por defecto por un número, en este caso el 0, si se provoca este comportamiento en un rango mayor aparecerán los números negativos que van antes del 0. Pero este es un problema sencillo de arreglar, solo deberemos colocar un inicio basado en la cantidad de elementos de la lista, si tiene 4 elementos entonces colocamos 4 como valor de start, si tiene 5 elementos usamos 5 como valor de start y así según se necesite.
+            </p>
+
+            <p>
+                Lo anterior aplica en ese caso específico que se mencionó, sin embargo con los números 0 y negativos también aparecen si no establecemos bien el start y usamos el reversed con números arábicos o romanos. 
+            </p>
+
+            <p>
+                En la siguiente lista se puede ver el comportamiento extraño cuando surge al establecer una numeración romana con el atributo reversed y el atributo start que no iguala a la cantidad de elementos de la lista, podremos ver que aparece la númeracion y aparece 0 y -1 como valores anterires a I.
+            </p>
+
+            <h4>Estaciones del año</h4>
+            <ol type="I" reversed start="2">
+                <li>
+                    Primavera
+                </li>
+                <li>
+                    Verano
+                </li>
+                <li>
+                    Otoño
+                </li>
+                <li>
+                    Invierno
+                </li>
+            </ol>
+
+            <p>
+                La siguiente es una muestra extra del comportamiento extraño pero con orden alfabético.
+            </p>
+
+            <h4>Estaciones del año</h4>
+            <ol type="A" reversed start="2">
+                <li>
+                    Primavera
+                </li>
+                <li>
+                    Verano
+                </li>
+                <li>
+                    Otoño
+                </li>
+                <li>
+                    Invierno
+                </li>
+            </ol>
+            
+            <p>
+                En la siguiente lista veremos el mismo comportamiento por defecto, pero el orden es con números arábicos.
+            </p>
+
+            <h4>Estaciones del año</h4>
+            <ol type="1" reversed start="2">
+                <li>
+                    Primavera
+                </li>
+                <li>
+                    Verano
+                </li>
+                <li>
+                    Otoño
+                </li>
+                <li>
+                    Invierno
+                </li>
+            </ol>
+
+
+            <p>
+                En conclusión, para solucionar ese comportamiento tendremos que colocar a start un valor igual a la cantidad de elementos de las listas.
+            </p>
+
+            <h2>
+                Listas desordenadas
+            </h2>
+
+            <p>
                 
             </p>
         </section>
+
     </main>
     </body>
 </html>
