@@ -987,7 +987,9 @@
                 La etiqueta para crear listas ordenadas es &lt;ol&gt; de ordered list, esta etiqueta tiene apertura y cierra. Dentro de la etiqueta &lt;ol&gt; se copiará cada elemento de la lista dentro de una etiqueta &lt;li&gt; de list item. 
             </p>
 
-            <h4>Estaciones del año</h4>
+            <h4>
+                Estaciones del año
+            </h4>
             <ol>
                 <li>
                     Primavera
@@ -1012,7 +1014,9 @@
                 Para que la lista empiece por un número o letra distinto se usará el atributo start como se puede ver en la siguiente etiqueta &lt;ol&gt;, la lista inicia con el número 3 porque así lo especificamos.
             </p>
 
-            <h4>Estaciones del año</h4>
+            <h4>
+                Estaciones del año
+            </h4>
             <ol start="3">
                 <li>
                     Primavera
@@ -1032,7 +1036,9 @@
                 También podemos usar el atributo reversed para que la lista tenga un orden inverso, como se puede ver en la siguiente etiqueta &lt;ol&gt;, este atributo no tiene un valor porque es booleano.
             </p>
             
-            <h4>Estaciones del año</h4>
+            <h4>
+                Estaciones del año
+            </h4>
             <ol reversed>
                 <li>
                     Primavera
@@ -1052,7 +1058,9 @@
                 Para cambiar los símbolos usados para ordenar la lista usamos el atributo type, este atributo tiene como valores 1 que es para números arábicos, A que es para orden alfabético en mayúsculas, a para orden alfabético en minúsculas, I para numeración romana en mayúscula e i para numeración romana en minúscula. La siguiente lista tiene un atributo type con el valor A para que se ordene con letras alfabéticas en mayúscula.
             </p>
             
-            <h4>Estaciones del año</h4>
+            <h4>
+                Estaciones del año
+            </h4>
             <ol type="A">
                 <li>
                     Primavera
@@ -1088,7 +1096,9 @@
                 En la siguiente lista se puede ver el comportamiento extraño cuando surge al establecer una numeración romana con el atributo reversed y el atributo start que no iguala a la cantidad de elementos de la lista, podremos ver que aparece la númeracion y aparece 0 y -1 como valores anterires a I.
             </p>
 
-            <h4>Estaciones del año</h4>
+            <h4>
+                Estaciones del año
+            </h4>
             <ol type="I" reversed start="2">
                 <li>
                     Primavera
@@ -1108,7 +1118,9 @@
                 La siguiente es una muestra extra del comportamiento extraño pero con orden alfabético.
             </p>
 
-            <h4>Estaciones del año</h4>
+            <h4>
+                Estaciones del año
+            </h4>
             <ol type="A" reversed start="2">
                 <li>
                     Primavera
@@ -1128,7 +1140,9 @@
                 En la siguiente lista veremos el mismo comportamiento por defecto, pero el orden es con números arábicos.
             </p>
 
-            <h4>Estaciones del año</h4>
+            <h4>
+                Estaciones del año
+            </h4>
             <ol type="1" reversed start="2">
                 <li>
                     Primavera
@@ -1144,7 +1158,6 @@
                 </li>
             </ol>
 
-
             <p>
                 En conclusión, para solucionar ese comportamiento tendremos que colocar a start un valor igual a la cantidad de elementos de las listas.
             </p>
@@ -1154,10 +1167,96 @@
             </h2>
 
             <p>
-                
+                Las listas desordenadas son aquellas listas sin orden específico que se hacen con viñetas, para esto se utiliza una etique &lt;ul&gt; de unordered list, esta etiqueta tiene apertura y cierra. Dentro de la etiqueta &lt;ol&gt; se copiará cada elemento de la lista dentro de una etiqueta &lt;li&gt; de list item. A continuación se muestra un ejemplo de una lista desordenada de cosas por hacer (se agregó el atributo type con el valor disc en el código pero no es necesario pues es el valor por defecto, esto se explica en el siguiente párrafo).
             </p>
+
+            <h4>
+                Cosas por hacer
+            </h4>
+            <ul type="disc">
+                <li>
+                    Terminar de copiar curso de HTML
+                </li>
+                <li>
+                    Transcribir un nuevo tema musical
+                </li>
+                <li>
+                    Practicar dibujo
+                </li>
+            </ul>
+            
+            <p>
+                Con las listas desordenadas se puede utilizar el atributo type también, sin embargo, lo que se indica en este es el tipo de viñeta que tendrá la lista, por defecto son circulos rellenos pero pueden ser cuadrados o círculos vacíos. El valor por defecto es disc y son los puntos rellenos, el valor cirle son círculos vacíos y el valor square es para cuadrados, a continuación se muestran ejemplos de listas con viñetas de círculos vacíos y cuadrados. 
+            </p>
+            
+            <h4>
+                Cosas por hacer
+            </h4>
+            <ul type="circle">
+                <li>
+                    Terminar de copiar curso de HTML
+                </li>
+                <li>
+                    Transcribir un nuevo tema musical
+                </li>
+                <li>
+                    Practicar dibujo
+                </li>
+            </ul>
+            
+            <h4>
+                Cosas por hacer
+            </h4>
+            <ul type="square">
+                <li>
+                    Terminar de copiar curso de HTML
+                </li>
+                <li>
+                    Transcribir un nuevo tema musical
+                </li>
+                <li>
+                    Practicar dibujo
+                </li>
+            </ul>
+
+            <h2>
+                Listas de definición
+            </h2>
+
+            <p>
+                Estas listas son poco utilizadas, por lo que es difícil encontrarlas, sin embargo, cuando hacemos un glosario de términos deberíamos utilizarla pues por definición es la más adecuada.
+            </p>
+
+            <p>
+                Para la lista de definición se utilizan tres etiquetas, &lt;dl&gt; que viene de definition list en inglés, luego para cada término que queremos explicar (como su título por así decirlo) usamos la etiqueta &lt;dt&gt; que viene de definition term (en lugar de usar las etiquetas &lt;li&gt; como en los tipos de listas vistos anterioremente) y para la definición como tal del término usaríamos la etiqueta &lt;dd&gt; que viene de definition data.
+            </p>
+
+            <dl>
+                <dt>
+                   HTML 
+                </dt>
+                <dd>
+                    Es un lenguaje de marcado que define el contenido de la web.
+                </dd>
+                <dt>
+                    CSS
+                </dt>
+                <dd>
+                    Es un lenguaje de definición que da estilos al código HTML.
+                </dd>
+                <dt>
+                    Javascript
+                </dt>
+                <dd>
+                    Es el lenguaje de la web.
+                </dd>
+            </dl>
+
+            <p>
+                Visualmente la lista se verá con una indentación en el navegador en la parte que define al término como tal, son listas poco utilizadas pero existen y pueden llegar a utilizarse como en el ejemplo anterior si se requiere.
+            </p>        
         </section>
 
     </main>
-    </body>
+</body>
 </html>
