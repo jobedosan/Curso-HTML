@@ -1257,6 +1257,222 @@
             </p>        
         </section>
 
+        <hr>
+
+        <section>
+            <h2>
+                Tablas
+            </h2>
+
+            <p>
+                Las tablas de datos en HTML sirven para tabular datos, antes se utizaban para maquetar como se mencionó antes con la explicación de semántica, pero esto cambió con CSS y su evolución.
+            </p>
+
+            <p>
+                Para las tablas se utiliza la etiqueta &lt;table&gt; que representará el cuerpo de la tabla, estas etiquetas tienen apertura y cierre. Luego tendremos las etiquetas para definir la fila de la tabla que es &lt;tr&gt; que viene de table row. Dentro de cada &lt;tr&gt; listamos las celdas que habrá en la fila, esto se hace con la etiqueta &lt;td;&gt; que viene de table data.
+            </p>
+
+            <p>
+                A continuación mostramos un ejemplo de tabla basada en los caballeros de zodiaco con su constelación y tipo.
+            </p>
+
+            <table>
+                <tr>
+                    <td>Nombre</td>
+                    <td>Constelación</td>
+                    <td>Tipo</td>
+                </tr>
+                <tr>
+                    <td>Ikki</td>
+                    <td>Fénix</td>
+                    <td>Bronce</td>
+                </tr>
+                <tr>
+                    <td>Shaina</td>
+                    <td>Ofiuco</td>
+                    <td>Plata</td>
+                </tr>
+                <tr>
+                    <td>Saga</td>
+                    <td>Géminis</td>
+                    <td>Dorado</td>
+                </tr>
+            </table>
+
+            <p>
+                Podemos crear grupos de filas en las tablas para agruparlos, esto se hace con tablas más elaboradas y se logra con &lt;thead&gt; que es table head, &lt;tbody&gt; que es table body y &lt;tfoot&gt; que es table footer. A continuación creamos una tabla más elaborada sobre los caballeros del zodiaco dividiéndola en secciones por tipo de armadura. Es importante resaltar que dentro de la etiqueta &lt;thead&gt; no se usan las etiquetas &lt;td&gt; para las filas, sino la etiqueta &lt;th&gt;.
+            </p>
+
+            <p>
+                La etiqueta &lt;th&gt; hace que visualmente se vean los textos de encabezado de la tabla en negrita.
+            </p>
+
+            <p>
+                Al hacer el ejemplo anterior podemos ver como el primer título solo abarca la primera celda, esto ocurre por defecto y puede arreglarse con CSS o en HTML por medio de un atributo.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Tabla de los Santos de Athena
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Nombre
+                        </th>
+                        <th>
+                            Constelación
+                        </th>
+                        <th>
+                            Tipo
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ikki</td>
+                        <td>Fénix</td>
+                        <td>Bronce</td>
+                    </tr>
+                    <tr>
+                        <td>Shaina</td>
+                        <td>Ofiuco</td>
+                        <td>Plata</td>
+                    </tr>
+                    <tr>
+                        <td>Saga</td>
+                        <td>Géminis</td>
+                        <td>Dorado</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+
+            <p>
+                El atributo que se usa para extender una celda más allá de su espacio por defecto es colspan y lleva como valor el número de celdas que abarcará, como se puede ver en el siguiente ejemplo. Se coloca el valor 3 y así ya tenemos arreglado el problema visual que vimos anteriormente. Es importante resaltar que la expansión se da de izquierda a derecha.
+            </p>
+
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">
+                            Tabla de los Santos de Athena
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Nombre
+                        </th>
+                        <th>
+                            Constelación
+                        </th>
+                        <th>
+                            Tipo
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ikki</td>
+                        <td>Fénix</td>
+                        <td>Bronce</td>
+                    </tr>
+                    <tr>
+                        <td>Shaina</td>
+                        <td>Ofiuco</td>
+                        <td>Plata</td>
+                    </tr>
+                    <tr>
+                        <td>Saga</td>
+                        <td>Géminis</td>
+                        <td>Dorado</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+
+            <p>
+                Para agrupar filas se utiliza el atributo rowspan y como valor el número de filas a abarcar, esta expansión va de arriba hacia abajo.
+            </p>
+
+            <p>
+                A continuación se hace un ejemplo incluyendo el rowspan y colspan en el código para crear una tabla más elaborada y utilizando el tfoot que viene siendo simplemente el pie de la tabla (Es importante recordar que para el pie de la tabla se usa &lt;tr&gt; para definir la fila y luego se tiende a usar &lt;th&gt; aunque se usa también &lt;td&gt; pues &lt;th&gt; define como tal un encabezado de tabla). En el ejemplo rowspan se utiliza para que Ofiuco ocupe dos filas, como queremos que ocupe el espacio de dos filas debemos borrar el último &lt;rt&gt; que dice ofiuco para que no se desajuste la tabla.
+            </p>
+
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">
+                            Tabla de los Santos de Athena
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            Nombre
+                        </th>
+                        <th>
+                            Constelación
+                        </th>
+                        <th>
+                            Tipo
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ikki</td>
+                        <td>Fénix</td>
+                        <td>Bronce</td>
+                    </tr>
+                    <tr>
+                        <td>Mistry</td>
+                        <td>Lagarto</td>
+                        <td>Plata</td>
+                    </tr>
+                    <tr>
+                        <td>Saga</td>
+                        <td>Géminis</td>
+                        <td>Dorado</td>
+                    </tr>
+                    <tr>
+                        <td>Shaina</td>
+                        <td rowspan="2">Ofiuco</td>
+                        <td>Plata</td>
+                    </tr>
+                    <tr>
+                        <td>Odiseo</td>
+                        <td>Dorada</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3">
+                            <small>Saint Seiya fue creado por Masami Kurumada</small>
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <p>
+                En resumen, aparte de las etiquetas para crear las tablas y agrupar filas o celdas, para crear tablas más organizadas a nivel semántico también debemos recordar que existe las etiquetas thead, tbody y tfoot. Además de que dentro de thead y tfoot en lugar de usar td se suele utilizar th.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>
+                Enlaces
+            </h2>
+        </section>
     </main>
 </body>
 </html>
