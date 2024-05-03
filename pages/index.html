@@ -957,7 +957,7 @@
             </p>
 
             <figure>
-                <img src="../img/periodic-table-of-html-elements.png" alt="Esta es una figura hecha con la imagen de la tabla periódica de los elementos HTML">
+                <img src="../img/periodic-table-of-html-elements.png" alt="Esta es una figura hecha con la imagen de la tabla periódica de los elementos HTML" width="100%">
                 <figcaption>
                     Tabla periódica de los elementos HTML
                 </figcaption>
@@ -1472,6 +1472,73 @@
             <h2>
                 Enlaces
             </h2>
+
+            <p>
+                Los enlaces son textos o elementos que nos permiten ir hacia otras rutas, archivos o URL. Prácticamente lo que hacen es darnos interactividad entre los diferentes documentos HTML que tenga nuestro sitio o nuestra aplicación.
+            </p>
+
+            <p>
+                Los enlaces son representados por la etiqueta &lt;a&gt;, esta etiqueta tiene apertura y cierra. Esta etiqueta tiene un atributo href, este nos permitirá ir hacia otra instancia.
+            </p>
+
+            <p>
+                Los enlaces pueden ser relativos a la carpeta en donde estemos, a continuación se coloca un enlace que lleva a otro archivo HTML creado de prueba para mostrar un enlace relativo a la misma carpeta. Como el archivo hola.html está en la misma carpeta podemos colocar su nombre directamente, sin embargo, VScode puede ayudarnos a autocompletar, y también podemos copiar punto y slash antes (./), estos dos signos indican que la ruta es hacia la misma carpeta en que se encuentra este archivo. 
+            </p>
+
+            <a href="./hola.html">Hacia la página Hola</a>
+
+            <p>
+                Por defecto los enlaces aparecen de color azul y subrayados, esto se puede cambiar con CSS.
+            </p>
+
+            <p>
+                También podemos tener enlaces externos, es decir, enlaces que lleven a otra página que esté en internet, para esto siempre debemos colocar las rutas con los protocolos http o https según corresponda y el dominio.
+            </p>
+
+            <a href="https://jonmircha.com">Visita mi sitio web jonmircha.com</a>
+
+            <p>
+                Es importante mencionar que los enlaces son elementos de línea, por lo que al colocarlos uno debajo de otro en código se colocarán uno al lado del otro, como puede verse en el siguiente ejemplo.
+            </p>
+
+            <a href="https://www.google.com">Google</a>
+            <a href="https://www.youtube.com">Youtube</a>
+            
+            <p>
+                Por defecto los enlaces abren en la misma pestaña en que está abierta el documento, sin embargo, podemos hacer que los enlaces abran en una nueva pestaña agregando el atributo target con el valor _blank. Se recomienda agregar este atributo cuando vamos a enlaces externos.
+            </p>
+            
+            <a href="https://www.youtube.com" target="_blank">Youtube</a>
+            
+            <p>
+                También se recomienda agregar a los enlaces externos el atributo rel con el valor nofollow, esto lo que hace es que los bots o las arañas de los motores de búsqueda sepan que el enlace es externo y no forma parte como tal del sitio en que fue posicionado, o que no guarda relación alguna.
+            </p>
+
+            <a href="https://www.youtube.com" target="_blank" rel="nofollow">Youtube</a>
+
+            <p>
+                Un ejemplo sencillo es que hagamos un blog de criptomonedas y agreguemos un texto al final de un post diciendo "Para más información respecto al tema puedes visitar la página de criptomonedas.org". Este sitio ya no tiene relación total con nuestro sitio. En este caso conviene colocar el rel="nofollow".
+            </p>
+
+            <p>
+                En cambio si al final del post colocamos "No te olvides de visitar mi cuenta de instagram, youtube o tiktok en donde estoy subiendo contenido de criptomonedas". En este caso se trata de un enlace externo pero que si tiene relación hasta cierto punto con nuestro sitio, en este caso quizás queramos evitar la adición del rel="nofollow".
+            </p>
+
+            <p>
+                Con los enlaces también podemos usar imágenes o vectores, es decir, colocar imágenes en las cuales haríamos clic y así nos llevaría a otro sitio web u otro documento de nuestro sitio.
+            </p>
+
+            <p>
+                Para esto debemos colocar entre la etiqueta de apertura y de cierre una etiqueta &lt;img&gt; como se puede ver en el siguiente ejemplo (modificamos el tamaño de la imagen con un atributo width pero se puede controlar mejor con CSS).
+            </p>
+
+            <a href="https://jonmircha.com/cursos" target="_blank">
+                <img src="../img/kEnAi.svg" alt="Ir hacia mis cursos de jonmircha.com" width="100" height="40" title="Ir hacia mis cursos de jonmircha.com">
+            </a>
+
+            <p>
+                Luego de haber visitado un enlace éste cambia de color azul a morado, esto es un comportamiento por defecto que puede ser modificado con CSS.
+            </p>
         </section>
     </main>
 </body>
